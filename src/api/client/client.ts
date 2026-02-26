@@ -1,11 +1,8 @@
 import axios from "axios";
 
 export const tripadvisorClient = axios.create({
-  baseURL: "https://api.content.tripadvisor.com/api/v1",
+  baseURL: "https://stackblitz-starters-zfkn7q6w.vercel.app/api/tripadvisor/",
   headers: {
     "Content-Type": "application/json",
-  },
-  params: {
-    key: import.meta.env.VITE_TRIPADVISOR_API_KEY, // or process.env.REACT_APP...
   },
 });
