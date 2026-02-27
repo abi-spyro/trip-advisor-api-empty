@@ -6,6 +6,5 @@ export const useLocationDetails = (locationId: string) => {
     queryKey: ["locationDetails", locationId],
     queryFn: () => getLocationDetails(locationId),
     enabled: !!locationId,
-    staleTime: 1000 * 60 * 10,
   });
 };

@@ -6,6 +6,5 @@ export const useSearchLocations = (searchQuery: string) => {
     queryKey: ["locations", searchQuery],
     queryFn: () => searchLocations(searchQuery),
     enabled: !!searchQuery,
-    staleTime: 1000 * 60 * 5,
   });
 };
